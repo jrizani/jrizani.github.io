@@ -1,27 +1,71 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Donate to jrizani project to support JRMapView</title>
-    </head>
-    <body>
-        <h3>Support us to develop JRMapView</h3>
-        <hr/>
-        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-            <input type="hidden" name="cmd" value="_s-xclick"/>
-            <input type="hidden" name="hosted_button_id" value="B5HCYFP577H7S"/>
-            <table>
-            <tr><td><input type="hidden" name="on0" value="Donate if you want help us to develop JRMapView"/>Donate if you want help us to develop JRMapView</td></tr><tr><td><select name="os0">
-                <option value="Option 1">Option 1 $5,00 USD</option>
-                <option value="Option 2">Option 2 $10,00 USD</option>
-                <option value="Option 3">Option 3 $20,00 USD</option>
-                <option value="Option 4">Option 4 $50,00 USD</option>
-                <option value="Option 5">Option 5 $100,00 USD</option>
-            </select> </td></tr>
-            </table>
-            <input type="hidden" name="currency_code" value="USD"/>
-            <input type="image" src="images/donate_button.png" name="submit" alt="PayPal - The safer, easier way to pay online!" width="100px"/>
-            <img alt="" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-            </form>
-            
-    </body>
+
+<head>
+    <title>Donate to jrizani project to support JRMapView</title>
+    <style>
+        .card {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            transition: 0.3s;
+            border-radius: 5px;
+            width: 512px;
+        }
+
+        .background {
+            padding: 16px 0px;
+            border-radius: 5px 5px 0px 0px;
+            background: linear-gradient(57deg, #00C6A7 0%, #1E4D92 100%);
+            color: white;
+        }
+
+        /* On mouse-over, add a deeper shadow */
+        .card:hover {
+            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+        }
+
+        /* Add some padding inside the card container */
+        .container {
+            padding: 60px 16px 100px 16px;
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+        <div class="card">
+            <div class="background">
+                <h3>Support us to develop JRMapView</h3>
+            </div>
+            <div class="container">
+                <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top" width="auto">
+                    <input type="hidden" name="cmd" value="_s-xclick" />
+                    <input type="hidden" name="hosted_button_id" value="B5HCYFP577H7S" />
+                    <table>
+                        <tr>
+                            <td><input type="hidden" name="on0"
+                                    value="Donate if you want help us to develop JRMapView" />Donate if
+                                you want help us to develop JRMapView</td>
+                        </tr>
+                        <tr>
+                            <td><select name="os0">
+                                    <option value="Option 1">Option 1 $5,00 USD</option>
+                                    <option value="Option 2">Option 2 $10,00 USD</option>
+                                    <option value="Option 3">Option 3 $20,00 USD</option>
+                                    <option value="Option 4">Option 4 $50,00 USD</option>
+                                    <option value="Option 5">Option 5 $100,00 USD</option>
+                                </select> </td>
+                        </tr>
+                    </table>
+                    <input type="hidden" name="currency_code" value="USD" />
+                    <br />
+                    <input type="image" src="images/donate_button.png" name="submit"
+                        alt="PayPal - The safer, easier way to pay online!" width="100px" />
+                    <img alt="" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+                </form>
+            </div>
+        </div>
+    </center>
+
+</body>
+
 </html>
